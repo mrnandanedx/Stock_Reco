@@ -20,7 +20,7 @@ st.title("AI-Powered Technical Stock Analysis Dashboard")
 st.sidebar.header("Configuration")
 
 # User Inputs
-tickers_input = st.sidebar.text_input("Enter Stock Tickers (comma-separated):", "AAPL,MSFT,GOOGL")
+tickers_input = st.sidebar.text_input("Enter Stock Tickers (comma-separated):", "RELIANCE.NS,HDFCBANK.NS,GOOGL")
 tickers = [ticker.strip().upper() for ticker in tickers_input.split(",") if ticker.strip()]
 
 end_date_default = datetime.today()
