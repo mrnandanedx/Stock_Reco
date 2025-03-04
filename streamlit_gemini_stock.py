@@ -106,7 +106,8 @@ def analyze_ticker(ticker, data):
     analysis_prompt = (
         f"You are a Stock Trader specializing in Technical Analysis. "
         f"Analyze the stock chart for {ticker} based on its candlestick chart and technical indicators. "
-        f"If the timeframe on the chart is 1m or 5m give an intraday view or else specify the holding period for the recommendation"
+        f"If the timeframe on the chart is 1m or 5m give an intraday view and specify the intraday view regardless"
+        f"if timeframe on the chart is not 1m or 5m specify the holding period for the recommendation"
         f"What is the price at which i should buy/sell the stock and what will be the exit level? "
         f"Also specify what additional info you might need in the chart for a better analysis."
         f"Provide a detailed analysis and recommendation. Return JSON with 'action' and 'justification'."
